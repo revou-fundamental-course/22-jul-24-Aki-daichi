@@ -33,13 +33,13 @@ nav {
 }
 
 .review{
-    border: 1px solid ;
+    border: 0px solid ;
     height: 300px;
     width: 100%;
 }
 
 .review-banner{
-    border: 1px solid ;
+    border: 0px solid ;
     height: 200px;
     width: 100%;
     background-image: url(https://picsum.photos/300);
@@ -47,7 +47,7 @@ nav {
 }
 
 .review-icon{
-    border: 1px solid ;
+    border: 0px solid ;
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -61,7 +61,33 @@ nav {
 }
 
 .contact-form{
-    border: 1px solid ;
+    display: flex;
+    flex-direction: column;
+    border: 0px solid ;
     height: 300px;
     width: 100%;
+    align-items: center;
 }
+
+input{
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button{
+    width: 75%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  
+}
+

@@ -32,14 +32,36 @@ nav {
     display: flex;
 }
 
-.reviews{
+.review{
     border: 1px solid ;
-    height: 250px;
+    height: 300px;
     width: 100%;
+}
+
+.review-banner{
+    border: 1px solid ;
+    height: 200px;
+    width: 100%;
+    background-image: url(https://picsum.photos/300);
+    background-size: cover;
+}
+
+.review-icon{
+    border: 1px solid ;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/50);
+}
+
+.review-user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-form{
     border: 1px solid ;
-    height: 250px;
+    height: 300px;
     width: 100%;
 }

@@ -1,27 +1,51 @@
 /* NAVBARS */
 nav {
-    border: 1px solid ;
+    border-bottom: 1px solid;
+    border-color: lightgray;
     display: flex;
     justify-content: space-between;
-    padding: 24px;
+    padding: 16px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
     align-items: center;
 }
+
 .logo{
     border: 1px solid ;
     background-image: url(https://picsum.photos/200);
     height: 50px;
     width: 125px;
     background-size: cover;
+    margin-left: 42px;
 }
-.nav-conainer{
+
+.nav-container{
     display: flex;
+    margin-right: 42px;
 }
 
 .nav-item{
-    border: 1px solid ;
+    border: 2px solid ;
     padding: 12px;
     align-items: center;
+    text-decoration: none;
+    color: black;
 }
+
+.nav-item[href="#home"]{
+    border-radius: 8px 0px 0px 8px;
+}
+
+.nav-item[href="#package"]{
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.nav-item[href="#call"]{
+    border-radius: 0px 8px 8px 0px;
+}
+
 
 /* 1ST PAGE */
 .main-title{
@@ -33,13 +57,13 @@ nav {
 }
 
 .review{
-    border: 0px solid ;
+    border: 1px solid;
     height: 300px;
     width: 100%;
 }
 
 .review-banner{
-    border: 0px solid ;
+    border: 1px solid;
     height: 200px;
     width: 100%;
     background-image: url(https://picsum.photos/300);
@@ -47,7 +71,7 @@ nav {
 }
 
 .review-icon{
-    border: 0px solid ;
+    border: 1px solid;
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -63,7 +87,7 @@ nav {
 .contact-form{
     display: flex;
     flex-direction: column;
-    border: 0px solid ;
+    border: 1px solid;
     height: 300px;
     width: 100%;
     align-items: center;

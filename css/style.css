@@ -183,6 +183,12 @@ nav{
 .form-group select{
     width: 476.833px;
     background-color: white;
+    color: black;
+}
+
+.form-group option[disabled] {
+    display: none;
+    color: gray;
 }
 
 .form-group button{

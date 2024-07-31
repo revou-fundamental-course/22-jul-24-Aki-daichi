@@ -57,6 +57,10 @@ nav .logo{
     border-radius: 0px 8px 8px 0px;
 }
 
+main{
+    padding: 30px;
+    overflow: hidden;
+}
 
 /* 1ST Page */
 .main-title{
@@ -82,17 +86,22 @@ nav .logo{
     gap: 30px;
 }
 
-.review{
-    border: 0px solid;
-    height: 750px;
-    width: 75%;
-    margin-left: 30px;
-    display: block;
+.review-container {
+    display: flex;
+    overflow-x: scroll; 
+    scroll-snap-type: x mandatory; 
 }
 
-.review-banner{
+.review {
+    min-width: 100%;
+    scroll-snap-align: start; 
+    transition: transform 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+.review-banner {
     border: 0px solid;
-    border-radius: 8px 8px 8px 8px;
+    border-radius: 8px;
     height: 75%;
     width: 100%;
     background-image: url(https://picsum.photos/1600/1200);
@@ -101,7 +110,7 @@ nav .logo{
     overflow: hidden;
 }
 
-.review #comment{
+.review #comment {
     padding-left: 50px;
     padding-right: 50px;
     font-size: 1.25em;
@@ -142,7 +151,6 @@ nav .logo{
     border-radius: 8px 8px 8px 8px;
     height: 750px;
     width: 45%;
-    margin-right: 30px;
     background: lightgray;
 }
 
@@ -215,10 +223,6 @@ nav .logo{
     padding-right: 37%;
 }
 
-.offer-title{
-    margin-left: 30px;
-}
-
 .offer-list{
     display: flex;
     flex-direction: column;
@@ -253,7 +257,7 @@ nav .logo{
 .main-title2{
     text-align: center;
     padding: 50px 0px;
-    margin: 50px -10px;
+    margin: 50px -40px;
     background-color: lightgray;
     font-size: 2.5em;
 }
@@ -301,7 +305,7 @@ nav .logo{
     align-items: center;
     text-align: center;
     padding: 40px 0px;
-    margin: 40px -10px 0px -10px;
+    margin: 40px -40px 0px -40px;
     border: 3px solid lightgray;
 }
 

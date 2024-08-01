@@ -52,3 +52,4 @@ function showNextReview() {
 }
 
 setInterval(showNextReview, 5000);
+
